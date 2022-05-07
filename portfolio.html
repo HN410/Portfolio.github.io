@@ -12,15 +12,24 @@
     
     
     <script type="application/ld+json">{"@context":"http://schema.org","@type":"Website","@id":"https://hn410.github.io/Portfolio.github.io","author":{"@type":"Person","name":"HN","sameAs":["https://github.com/HN410"]},"name":"HNのポートフォリオ","description":"","url":"https://hn410.github.io/Portfolio.github.io"}</script>
-    <meta property="og:type" content="blog">
+    <meta name="description" content=".info table {     width: 60%;     margin:  auto;  },    .test {     height: 10%;     display:inline-block;     float: left }    自作CPUシミュレータ (CLI, GUI)ISAからCPUを設計，開発を行うグループ開発「CPU実験」で作成した，自班のCPUと同一の挙動">
+<meta property="og:type" content="blog">
 <meta property="og:title" content="作品集">
 <meta property="og:url" content="https://hn410.github.io/Portfolio.github.io/portfolio.html">
 <meta property="og:site_name" content="HNのポートフォリオ">
+<meta property="og:description" content=".info table {     width: 60%;     margin:  auto;  },    .test {     height: 10%;     display:inline-block;     float: left }    自作CPUシミュレータ (CLI, GUI)ISAからCPUを設計，開発を行うグループ開発「CPU実験」で作成した，自班のCPUと同一の挙動">
 <meta property="og:locale" content="ja_JP">
-<meta property="article:published_time" content="2022-05-05T05:58:50.295Z">
-<meta property="article:modified_time" content="2022-05-05T05:58:50.295Z">
+<meta property="og:image" content="https://hn410.github.io/Portfolio.github.io/images/cpusim_0.png">
+<meta property="og:image" content="https://hn410.github.io/Portfolio.github.io/images/cpusim_1.png">
+<meta property="og:image" content="https://hn410.github.io/Portfolio.github.io/images/imgsender.jpg">
+<meta property="og:image" content="https://hn410.github.io/Portfolio.github.io/images/imgtopdf.jpg">
+<meta property="og:image" content="https://hn410.github.io/Portfolio.github.io/images/gan_annotation_tool.png">
+<meta property="og:image" content="https://hn410.github.io/Portfolio.github.io/images/secondhand_annotator.png">
+<meta property="article:published_time" content="2022-05-07T14:54:49.339Z">
+<meta property="article:modified_time" content="2022-05-07T14:54:49.339Z">
 <meta property="article:author" content="HN">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://hn410.github.io/Portfolio.github.io/images/cpusim_0.png">
     
     
         
@@ -167,9 +176,9 @@
     
     
         <div class="post-meta">
-    <time datetime="2022-05-05T14:58:50+09:00">
+    <time datetime="2022-05-07T23:54:49+09:00">
 	
-		    2022/05/05
+		    2022/05/07
     	
     </time>
     
@@ -181,7 +190,138 @@
     
     <div class="post-content markdown">
         <div class="main-content-wrap">
-            
+            <style>
+
+.info table {
+    width: 60%;
+    margin:  auto; 
+}, 
+ 
+.test {
+    height: 10%;
+    display:inline-block;
+    float: left
+}
+</style>
+
+
+<h2 id="自作CPUシミュレータ-CLI-GUI"><a href="#自作CPUシミュレータ-CLI-GUI" class="headerlink" title="自作CPUシミュレータ (CLI, GUI)"></a>自作CPUシミュレータ (CLI, GUI)</h2><p>ISAからCPUを設計，開発を行うグループ開発「CPU実験」で作成した，自班のCPUと同一の挙動をするシミュレータです．班員のデバッグが楽になるようにGUIのソフトを用意したり，巻き戻し機能やメモリのアクセス数ランキングなどの様々な機能するなどして約半年近くにわたって改良を続けました．</p>
+<table>
+<tr>
+<td><a href="images/cpusim_0.png"><img src="images/cpusim_0.png"></a></td>
+<td><a href="images/cpusim_1.png"><img src="images/cpusim_1.png"></a></td>
+</tr>
+</table>
+
+<div class="info">
+
+<table>
+<thead>
+<tr>
+<th align="left"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">使用言語</td>
+<td align="center">C++ (CLI) <br /> Java (GUI)</td>
+</tr>
+<tr>
+<td align="left">総行数</td>
+<td align="center">約5,000行 (CLI) <br/> 約2,400行 (GUI)</td>
+</tr>
+<tr>
+<td align="left">GitHub</td>
+<td align="center"><a target="_blank" rel="noopener" href="https://github.com/2021cpuex-group6/simulator/tree/main/sim">CLI</a>, <a target="_blank" rel="noopener" href="https://github.com/2021cpuex-group6/GUISimmulator">GUI</a></td>
+</tr>
+</tbody></table>
+</div>
+
+
+<h2 id="電子板書作成支援ソフト"><a href="#電子板書作成支援ソフト" class="headerlink" title="電子板書作成支援ソフト"></a>電子板書作成支援ソフト</h2><p>PC上で動作するGUIソフト(ImageToPDF)と，Android上で動作するアプリ(ImageSender)の組です．ImageSenderで撮影した写真をImageToPDFに送信し，そこで書き込みを加えてからPDFにまとめられるソフトです．</p>
+<table>
+<tr>
+<td><a href="images/imgsender.jpg"><img src="images/imgsender.jpg"></a></td>
+<td><a href="images/imgtopdf.jpg"><img src="images/imgtopdf.jpg"></a></td>
+</tr>
+</table>
+
+<div class="info">
+
+<table>
+<thead>
+<tr>
+<th align="left"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">使用言語</td>
+<td align="center">Java</td>
+</tr>
+<tr>
+<td align="left">総行数</td>
+<td align="center">約1,000行 (ImageToPDF) <br/> 約500行 (ImageSender)</td>
+</tr>
+<tr>
+<td align="left">GitHub</td>
+<td align="center"><a target="_blank" rel="noopener" href="https://github.com/HN410/ImageToPDF">ImageToPDF</a>, <a target="_blank" rel="noopener" href="https://github.com/HN410/ImageSender">ImageSender</a></td>
+</tr>
+</tbody></table>
+</div>
+
+<h2 id="GANAnnotationTool"><a href="#GANAnnotationTool" class="headerlink" title="GANAnnotationTool"></a>GANAnnotationTool</h2><p>GAN用に画像ペアのアノテーションをする支援をするソフトです． 例えば顔画像のドメイン変換を行うようなモデルで，2画像をペアとして一方ともう一方のドメインの違いをアノテーションとして記録するようなデータセットの作成に使えます．</p>
+<p><a href="images/gan_annotation_tool.png"><img src="images/gan_annotation_tool.png"></a></p>
+<div class="info">
+
+<table>
+<thead>
+<tr>
+<th align="left"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">使用言語</td>
+<td align="center">Java</td>
+</tr>
+<tr>
+<td align="left">総行数</td>
+<td align="center">約1,700行</td>
+</tr>
+<tr>
+<td align="left">GitHub</td>
+<td align="center"><a target="_blank" rel="noopener" href="https://github.com/HN410/ImageToPDF">GANAnnotationTool</a></td>
+</tr>
+</tbody></table>
+</div>
+
+<h2 id="Secondhand-Annotator"><a href="#Secondhand-Annotator" class="headerlink" title="Secondhand Annotator"></a>Secondhand Annotator</h2><p>ルールベースで分類を行うために作成したアノテーションツールです．既に登録したタグは自動でタグ付けされる，複数単語をまとめて一つのタグを付けられるなどの特徴があります．</p>
+<p><a href="images/secondhand_annotator.png"><img src="images/secondhand_annotator.png"></a></p>
+<div class="info">
+
+<table>
+<thead>
+<tr>
+<th align="left"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">使用言語</td>
+<td align="center">Vue.js</td>
+</tr>
+<tr>
+<td align="left">総行数</td>
+<td align="center">約800行</td>
+</tr>
+<tr>
+<td align="left">GitHub</td>
+<td align="center"><a target="_blank" rel="noopener" href="https://github.com/HN410/SecondhandAnnotator">Secondhand Annotator</a></td>
+</tr>
+</tbody></table>
+</div>
+
             
 
 
